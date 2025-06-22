@@ -6,6 +6,12 @@
   --border: #d6c4a8;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: var(--bg-dark);
   color: var(--text-light);
@@ -37,7 +43,7 @@ nav {
 }
 
 /* Modal */
-.modal {
+/* .modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -51,6 +57,29 @@ nav {
   z-index: 9999;
   padding: 2rem;
   text-align: center;
+} */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.95);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 2rem;
+}
+
+.modal-content {
+  text-align: center;
+  max-width: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .modal h1 {

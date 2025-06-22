@@ -14,10 +14,12 @@
     <audio id="background-music" src="assets/audio/11 - Iris.mp3" loop></audio>
 
     <div class="modal" id="passwordModal">
-      <h1>Our Story</h1>
-      <p>Hint: the password is a turning point in our relationship.</p>
-      <input type="password" id="passwordInput" placeholder="--/--/----" />
-      <button onclick="unlockScrapbook()">Unlock</button>
+      <div class="modal-content">
+        <h1>Our Story</h1>
+        <p>Hint: the password is a turning point in our relationship.</p>
+        <input type="password" id="passwordInput" placeholder="--/--/----" />
+        <button onclick="unlockScrapbook()">Unlock</button>
+      </div>
     </div>
 
     <div id="scrapbook" style="display: none">
