@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Digital Scrapbook</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=:wght@500;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio id="background-music" src="assests/audio/11 - Iris.mp3" loop></audio>
+
+    <div class="modal" id="passwordModal">
+      <h1>Our Story</h1>
+      <p>Hint: the password is a turning point in our relationship.</p>
+      <input type="password" id="passwordInput" placeholder="--/--/----" />
+      <button onclick="unlockScrapbook()">Unlock</button>
+    </div>
+
+    <div id="scrapbook" style="display: none">
+      <nav>
+        <div>
+          <div class="nav-title">Moments in Time</div>
+          <div class="nav-subtitle">
+            Our digital journey of love, laughter, and memories
+          </div>
+        </div>
+      </nav>
+      <section class="timeline">
+        <div class="event">
+          <div class="event-date">June 1, 2024</div>
+          <div class="event-title">Our First Adventure Together</div>
+          <img src="assets/images/photo1.jpg" alt="Memory 1" />
+        </div>
+
+        <div class="event">
+          <div class="event-date">August 15, 2024</div>
+          <div class="event-title">That Unforgettable Sunset</div>
+          <img src="assets/images/photo2.jpg" alt="Memory 2" />
+        </div>
+
+        <div class="event">
+          <div class="event-date">October 31, 2024</div>
+          <div class="event-title">Halloween Fun</div>
+          <img src="assets/images/photo3.jpg" alt="Memory 3" />
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
