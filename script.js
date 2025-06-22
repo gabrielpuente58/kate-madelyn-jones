@@ -1,4 +1,4 @@
-const correctPassword = "love2025";
+const correctPassword = "05/10/2025";
 const modal = document.getElementById("passwordModal");
 const scrapbook = document.getElementById("scrapbook");
 const music = document.getElementById("background-music");
