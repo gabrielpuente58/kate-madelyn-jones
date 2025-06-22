@@ -133,30 +133,14 @@ nav {
   font-weight: 600;
 }
 
-.event img {
+.event img,
+.event video {
   width: 100%;
+  max-height: 500px;
   border-radius: 8px;
   border: 1px solid var(--border);
   margin-top: 0.5rem;
-  height: auto;
-}
-
-/* Music + Footer */
-.music-section,
-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-}
-
-.music-section h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 2rem;
-  color: var(--accent);
-}
-
-.music-section p,
-footer p {
-  color: var(--text-muted);
+  object-fit: cover;
 }
 
 /* Responsive tweaks */
@@ -178,7 +162,7 @@ footer p {
     font-size: 1.25rem;
   }
 
-  .music-section h2 {
-    font-size: 1.6rem;
+  .event video {
+    max-height: 250px;
   }
 }
